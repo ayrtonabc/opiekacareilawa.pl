@@ -1,4 +1,68 @@
+# Robots.txt dla Opieka Ilawa 24 - Optymalizacja SEO 2026
+# https://opieka24ilawa.pl
+
 User-agent: *
 Allow: /
 
+Disallow: /cms/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /api/
+Disallow: /*utm_*
+Disallow: /*ref*
+
 Sitemap: https://opieka24ilawa.pl/sitemap.xml
+
+Crawl-delay: 1
+
+Host: https://opieka24ilawa.pl
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Disallow: /cms/
+
+User-agent: Googlebot-Video
+Allow: /
+Disallow: /cms/
+
+User-agent: Yandex
+Allow: /
+Disallow: /cms/
+Crawl-delay: 2
+
+User-agent: YandexImages
+Allow: /
+Disallow: /cms/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /cms/
+Crawl-delay: 1
+
+User-agent: msnbot
+Allow: /
+Disallow: /cms/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /cms/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /cms/
+
+User-agent: Siri
+Disallow: /
+
+User-agent: *bot*
+Disallow: /cms/
+
+Clean-param: utm_source utm_medium utm_campaign utm_content utm_term ref gclid fbclid
